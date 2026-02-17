@@ -10,9 +10,9 @@
       in {
         devShells.default = pkgs.mkShell {
           packages = [
-            pkgs.gcc11
+            pkgs.libgcc
             pkgs.gdb
-            pkgs.make
+            pkgs.gnumake42
             pkgs.pkg-config
           ];
           shellHook = ''
